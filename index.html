@@ -5,11 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Portafolio | Bienvenido</title>
     <style>
-        /* Estilos Generales */
         body { 
             font-family: 'Segoe UI', sans-serif; 
-            background-color: #0f172a; /* Azul muy oscuro */
-            color: #f8fafc; 
+            background-color: #0b0e14; 
+            color: #ffffff; 
             display: flex; 
             flex-direction: column; 
             align-items: center; 
@@ -18,44 +17,51 @@
             margin: 0; 
         }
 
-        /* Estilo de la Imagen */
-        .perfil {
-            width: 180px;
-            height: 180px;
-            border-radius: 50%; /* La hace circular */
-            border: 4px solid #38bdf8; /* Borde celeste brillante */
-            object-fit: cover; /* Evita que la foto se deforme */
-            box-shadow: 0 0 20px rgba(56, 189, 248, 0.5);
-            margin-bottom: 20px;
+        /* Estilo para tu imagen del planeta */
+        .img-planeta {
+            width: 250px; /* Un poco más grande para que luzca el planeta */
+            height: 250px;
+            border-radius: 50%; 
+            border: 2px solid #50d8d7;
+            object-fit: cover;
+            /* Efecto de resplandor espacial */
+            box-shadow: 0 0 30px rgba(80, 216, 215, 0.4); 
+            margin-bottom: 25px;
+            transition: transform 0.5s ease;
         }
 
-        h1 { font-size: 2.5rem; margin-bottom: 10px; color: #38bdf8; }
-        p { font-size: 1.2rem; color: #94a3b8; max-width: 500px; text-align: center; }
+        .img-planeta:hover {
+            transform: rotate(10deg) scale(1.05); /* El planeta gira un poco al pasar el mouse */
+        }
 
-        /* Estilo del Botón */
+        h1 { color: #50d8d7; margin: 10px 0; }
+        p { color: #a0a0a0; max-width: 400px; text-align: center; line-height: 1.6; }
+
         .btn {
             margin-top: 30px;
-            padding: 12px 24px;
-            background-color: #38bdf8;
-            color: #0f172a;
+            padding: 12px 30px;
+            background-color: #50d8d7;
+            color: #0b0e14;
             text-decoration: none;
-            border-radius: 8px;
+            border-radius: 50px; /* Botón más redondeado, estilo moderno */
             font-weight: bold;
-            transition: all 0.3s ease;
+            transition: 0.3s;
         }
 
         .btn:hover {
-            background-color: #0ea5e9;
-            transform: translateY(-3px); /* Efecto de levitación */
-            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+            background-color: #ffffff;
+            letter-spacing: 1px; /* El texto se separa un poco al tocarlo */
         }
     </style>
 </head>
 <body>
 
-    <img src="perfil.jpg" alt="Foto de Bienvenida" class="perfil">
+    <img src="fondoplaneta.jpg" alt="Planeta de Bienvenida" class="img-planeta">
 
-    <h1>¡Bienvenido a mi Nave!</h1>
-    <p>Este es mi campo de pruebas donde experimento con código y diseño. ¡Gracias por pasar a ver!</p>
+    <h1>¡Bienvenidos a bordo!</h1>
+    <p>Estás en mi centro de control. Aquí es donde los experimentos se convierten en código real.</p>
 
-    <a href="proyectos
+    <a href="proyectos.html" class="btn">ENTRAR AL LABORATORIO</a>
+
+</body>
+</html>
